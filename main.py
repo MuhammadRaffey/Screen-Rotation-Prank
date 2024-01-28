@@ -10,14 +10,14 @@ class Prank:
         self.screen = rotatescreen.get_primary_display()
 
     def rotate_screen(self):
-        for i in range(4):
-            time.sleep(1)
+        for i in range(2):
+            time.sleep(0.25)
             self.screen.set_portrait_flipped()
-            time.sleep(1)
+            time.sleep(0.25)
             self.screen.set_landscape_flipped()
-            time.sleep(1)
+            time.sleep(0.25)
             self.screen.set_portrait()
-            time.sleep(1)
+            time.sleep(0.25)
             self.screen.set_landscape()
             pygame.mixer.init()
             pygame.mixer.music.load(os.path.join('assets', 'sound.mp3'))
